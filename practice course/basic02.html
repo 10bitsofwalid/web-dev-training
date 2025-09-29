@@ -8,6 +8,13 @@
         border-radius: 2px;
         cursor: pointer;
         margin-right: 8px;
+        transition: opacity 0.15s;
+    }
+    .sub-button:hover{
+        opacity: 0.75;
+    }
+    .sub-button:active{
+        opacity: 0.4;
     }
     .join-button{
         border-color: rgb(99, 99, 238);
@@ -19,6 +26,14 @@
         border-style: solid;
         border-width: 1px;
         margin-right: 8px;
+        transition: background-color 0.15s, color 0.15s;
+    }
+    .join-button:hover{
+        background-color: rgb(99, 99, 238);
+        color: white
+    }
+    .join-button:active{
+        opacity: 0.75;
     }
     .tweet-button{
         border: none;
@@ -30,6 +45,10 @@
         cursor: pointer;
         font-weight: bold;
         font-size: 15px;
+        transition: box-shadow .15s;
+    }
+    .tweet-button:hover{
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
     }
     .req-button{
         background-color: black;
@@ -98,6 +117,7 @@
 <button class="addtc-button">
     Add to Cart
 </button>
+<br><br>
 
 <button class="linkedin-button">
     Apply on company website
