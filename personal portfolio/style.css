@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
+/*global reset*/
 *{
     margin: 0;
     padding: 0;
@@ -19,7 +20,7 @@ body{
     overflow-x: hidden;
 }
 
-/* ===== HEADER ===== */
+/*header*/
 header{
     position: fixed;
     top: 0;
@@ -33,6 +34,7 @@ header{
     z-index: 100;
 }
 
+/*logo style*/
 .logo{
     font-size: 3rem;
     color: #b74b4b;
@@ -44,6 +46,7 @@ header{
     transform: scale(1.05);
 }
 
+/*navigation links*/
 nav a{
     font-size: 1.8rem;
     color: #fff;
@@ -67,12 +70,13 @@ nav a.active::after{
     width: 100%;
 }
 
-/* ===== HOME ===== */
+/*section layout*/
 section{
     min-height: 100vh;
     padding: 10rem 9% 5rem;
 }
 
+/*home section*/
 .home{
     display: flex;
     justify-content: center;
@@ -80,6 +84,7 @@ section{
     gap: 8rem;
 }
 
+/*home image*/
 .home-img img{
     width: 32vw;
     border-radius: 50%;
@@ -91,6 +96,7 @@ section{
     transform: scale(1.05);
 }
 
+/*home text content*/
 .home-content h1{
     font-size: 6rem;
 }
@@ -107,11 +113,12 @@ section{
     opacity: 0.9;
 }
 
+/*accent color*/
 span{
     color: #b74b4b;
 }
 
-/* ===== SOCIAL ICONS ===== */
+/*social icons*/
 .socials a{
     display: inline-flex;
     justify-content: center;
@@ -132,7 +139,7 @@ span{
     transform: scale(1.2) translateY(-4px);
 }
 
-/* ===== BUTTON ===== */
+/*button*/
 .btn{
     display: inline-block;
     padding: 1rem 3rem;
@@ -151,7 +158,7 @@ span{
     box-shadow: 0 0 25px #b74b4b;
 }
 
-/* ===== TYPING EFFECT ===== */
+/*typing effects */
 .typing-text span::before{
     content: "Web Developer";
     color: #b74b4b;
@@ -166,13 +173,14 @@ span{
     81%, 100%{content: "Problem Solver";}
 }
 
-/* ===== SERVICES ===== */
+/*services*/
 .heading{
     text-align: center;
     font-size: 4rem;
     margin-bottom: 5rem;
 }
 
+/*service boxes*/
 .service-container{
     display: flex;
     justify-content: center;
@@ -202,7 +210,7 @@ span{
     margin-bottom: 1.5rem;
 }
 
-/* ===== SKILLS ===== */
+/*skills*/
 .skills-list{
     max-width: 700px;
     margin: auto;
@@ -216,6 +224,7 @@ span{
     font-size: 1.8rem;
 }
 
+/*progress bar fill*/
 .bar{
     background: #222;
     height: 1rem;
@@ -235,12 +244,13 @@ span{
     to{width: var(--fill);}
 }
 
+/*skill percentages*/
 .fill.html{--fill: 90%;}
 .fill.css{--fill: 80%;}
 .fill.js{--fill: 70%;}
 .fill.cpp{--fill: 75%;}
 
-/* ===== CONTACT ===== */
+/*contact form*/
 .contact form{
     max-width: 600px;
     margin: auto;
@@ -264,7 +274,7 @@ input, textarea{
     font-size: 1.6rem;
 }
 
-/* ===== FOOTER ===== */
+/*footer*/
 footer{
     text-align: center;
     padding: 2rem;
@@ -274,7 +284,7 @@ footer{
     margin-top: 5rem;
 }
 
-/* ===== RESPONSIVE ===== */
+/*responsive*/
 @media(max-width: 995px){
     .home{
         flex-direction: column;
