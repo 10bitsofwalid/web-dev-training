@@ -155,6 +155,7 @@ span{
     font-size: 2rem;
     margin-right: 1.5rem;
     transition: 0.3s ease;
+    margin-top: 8px;
 }
 
 .socials a:hover{
@@ -176,6 +177,7 @@ span{
     font-weight: 600;
     margin-top: 1rem;
     transition: 0.3s ease;
+    margin-bottom: 10px;
 }
 
 .btn:hover{
@@ -312,9 +314,11 @@ span{
 
 /*skill percentages*/
 .fill.html{--fill: 90%;}
-.fill.css{--fill: 80%;}
+.fill.css{--fill: 70%;}
 .fill.js{--fill: 70%;}
 .fill.cpp{--fill: 75%;}
+.fill.java{--fill:70%;}
+.fill.python{--fill:80%;}
 
 /*contact form*/
 .contact form{
@@ -341,6 +345,7 @@ input, textarea{
     background: #111;
     color: #fff;
     font-size: 1.6rem;
+    margin: 8px;
 }
 
 /*footer*/
