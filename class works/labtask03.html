@@ -2,18 +2,21 @@
 <html>
     <head>
         <style>
-            table, tr, th, td{
-                border-collapse: collapse;
+            tr, th, td{
+                border: 1px;
                 width: 20%;
                 height: 20%;
                 border-style: double;
+            }
+            table{
+                width:28rem;
             }
         </style>
     </head>
     <body>
         <table>
             <tr>
-                <td colspan="2">Fill the form below</td>
+                <td colspan="2" style="text-align: center; font-weight: bold">Fill the form below</td>
             </tr>
             <tr>
                 <td>Name</td>
@@ -27,7 +30,7 @@
                 <td>Password</td>
                 <td>
                     <form>
-                        <input type="text" id="pass" name="pass">
+                        <input type="password" id="pass" name="pass">
                     </form>
                 </td>
             </tr>
@@ -35,7 +38,7 @@
                 <td>Feedback</td>
                 <td>
                     <form>
-                        <input type="letter-box" id="feed" name="feed" height="20px">
+                        <textarea></textarea>
                     </form>
                 </td>
             </tr>
@@ -45,8 +48,8 @@
                 </td>
                 <td>
                     <form>
-                        <input type="radio" id="gen" name="gen" value="male">
-                        <input type="radio" id="gen" name="gen">
+                        <input type="radio" id="gen" name="gen" value="male">Male
+                        <input type="radio" id="gen" name="gen">Female
                     </form>
                 </td>
             </tr>
@@ -54,18 +57,18 @@
                 <td>Subject</td>
                 <td>
                     <form>
-                        <input type="checkbox" id="sub" name="sub"value="Web">Web
-                        <input type="checkbox">ds
-                        <input type="checkbox">
-                        <input type="checkbox">
+                        <label><input type="checkbox" name="sub"value="Web">Web</label>
+                        <label><input type="checkbox" name="sub"value="Math">Math</label>
+                        <label><input type="checkbox" name="sub" value="Graphics">Graphics</label>
+                        <label><input type="checkbox" name="sub"value="English">English</label>
                     </form>
                 </td>
             </tr>
             <tr>
                 <td></td>
                 <td>
-                    <input type="reset">
-                    <input type="submit">
+                    <input type="reset" value="Reset All">
+                    <input type="submit" value="Submit Above Details">
                 </td>
             </tr>
         </table>
