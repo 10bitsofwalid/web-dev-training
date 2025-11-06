@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h3>Swap And Join</h3>
+        <p id="output2"></p>
+        <script>
+            let str1 = "Hello World";
+            let str2 = "JavaScript Code";
+            let swap1 = str1.replace(/./g, c => c === c.toUpperCase()? c.toLowerCase(): c.toUpperCase());
+            let swap2 = str2.replace(/./g, c => c === c.toUpperCase()? c.toLowerCase(): c.toUpperCase());
+            let result = swap1.trim().replace(/\s+/g, '_') + swap2.trim().replace(/\s+/g,'_');
+            document.getElementById("output2").textContent = result;
+        </script>
+    </body>
+</html>

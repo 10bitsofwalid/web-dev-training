@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h3>Remove and Replace</h3>
+        <p id="output1"></p>
+        <script>
+            function cleanAndReplace(str){
+                return str.trim().toLowerCase().replace(/\s+/g, '-');
+            }
+            document.getElementById("output1").textContent = 
+            cleanAndReplace("Java Script Language");
+        </script>
+    </body>
+</html>
