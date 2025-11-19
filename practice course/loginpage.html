@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+
+                font-family: Arial, Helvetica, sans-serif;
+                background: #f0f2f5;
+
+                .box{
+                    width: 350px;
+                    background: white;
+                    padding: 20px;
+                    margin: auto;
+                    margin-top: 40px;
+                    border-radius: 8px;
+                    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+                }
+
+                .title{
+                    font-size: 24px;
+                    font-weight: bold;
+                    text-align: center;
+                    color: blueviolet;
+                }
+
+                input, select{
+                    width: 90%;
+                    padding: 8px;
+                    margin: 5px ;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                }
+
+                @media (max-width: 400px){
+                    .box{
+                        width: 90%;
+                    }
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <div class="title">facebook</div>
+            <p style="text-align: center;">It's quick and easy</p>
+
+            <input type="text" placeholder="First name">
+            <input type="text" placeholder="Surname">
+            <input type="text" placeholder="Phone number or email">
+            <input type="password" placeholder="Password">
+
+            <p>Date of birth</p>
+            <select><option>Day</option></select>
+            <select><option>Month</option></select>
+            <select><option>Year</option></select>
+
+            <label>Gender</lable>
+            <input type="radio" name="g">male
+
+        </div>
+    </body>
+</html>
