@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            table{
+                width: 70%;
+            }
+            tr{
+                border: 1px solid skyblue;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td style="background-color: cyan;">Chrome</td>
+                <td class="colorR">Edge</td>
+                <td style="background-color: cyan;">Firefox</td>
+                <td style="background-color: cyan;" class="fontB">Safari</td>
+            </tr>
+            <tr>
+                <td class="fontI">Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td class="colorG">Yes</td>
+            </tr>
+        </table>
+        <script>
+            document.querySelector(".colorR").style.backgroundColor="red";
+            document.querySelector(".fontB").style.fontWeight="bold";
+            document.querySelector(".fontI").style.fontStyle="italic";
+            document.querySelector(".colorG").style.backgroundColor="green";
+        </script>
+    </body>
+</html>
