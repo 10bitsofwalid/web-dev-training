@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <p id="info"></p>
+        <script>
+            const man = [
+            {name: "Alice", age: 1, ID: 72},
+            {name: "Ash", age: 2, ID: 49},
+            {name: "Bob", age: 18, ID: 52},
+            {name: "Eris", age: 6, ID: 41},
+            {name: "Duddle", age: 57, ID: 72},
+            ];
+            man.sort((x, y)=> x.age - y.age);
+            document.getElementById("info").innerHTML = man.map((man)=> man.name + "("+man.age+")") .join(", ");
+        </script>
+    </body>
+</html>
