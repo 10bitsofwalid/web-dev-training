@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="acc"></p>
+        <script>
+            const prices = [10.99, 66.3, 44.3, 9.99];
+            let totalprice = 0;
+            for(const price of prices){
+                totalprice += price;
+            }
+            document.getElementById("acc").innerHTML = totalprice;
+        </script>
+    </body>
+</html>
