@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+    </head>
+    <body>
+        <form method="GET">
+
+            <label><br>Name:<br></label>
+            <input type="text" name="name" required>
+
+            <label><br>Email:<br></label>
+            <input type="email" name="email" required>
+
+            <label><br>Phone: <br></label>
+            <input type="text" name="phone" required>
+
+            <br><br>
+            <button type="submit">Add contact</button>
+
+        </form>
+        <?php
+
+        if($_SERVER["REQUEST_METHOD"] == "POST"){
+            $name = filter_input(INPUT_POST, "name", FILTER_SANITIZE_SPECIAL_CHARS);
+            $email = filter_input(INPUT_POST, "email", FILTER_VALIDATE_EMIAL);
+            $phone = filter_input(INPUT_POST, "phone", FILTER_SANITIZE_NUMBER_INT);
+
+            if($name && $email && $phone){
+                echo "contact added: $name ($email, $phone)";
+            }
+            else{
+                echo "invalid input!"
+            }
+
+        }
+
+        
+        ?>
+    </body>
+</html>
