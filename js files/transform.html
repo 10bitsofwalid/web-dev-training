@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="t"></p>
+        <script>
+            const words = ["cars", "trucks", "buses", "trains", "planes", "ships"];
+            const Nwords = [];
+            for(let i=0; i<words.length; i++){
+                const transform = words[i].toLocaleLowerCase();
+                Nwords.push(transform);
+            }
+            document.getElementById("t").innerHTML = Nwords;
+        </script>
+        <p id="t2"></p>
+        <script>
+            const words2 = ["cars", "trucks", "buses", "trains", "planes", "ships"];
+            const Nwords2 = [];
+            for(let i=0; i<words.length; i++){
+                const transform2 = words[i].toLocaleUpperCase();
+                Nwords2.push(transform2);
+            }
+            document.getElementById("t2").innerHTML = Nwords2;
+        </script>
+    </body>
+</html>
